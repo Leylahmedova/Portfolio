@@ -1,7 +1,15 @@
 import Styles from './experienceBox.module.scss'
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from 'react';
+
 const ExperienceBox = ({image,name,date,work,employement_type}) => {
+  useEffect(() => {
+    AOS.init({
+    });
+  }, []);
   return (
-    <div className={Styles.experience__box}>
+    <div data-aos="fade-right" data-aos-duration="1500" data-aos-once="true" className={Styles.experience__box}>
       <div className={Styles.experience__image}>
         <img src={image} alt={name} />
       </div>

@@ -1,14 +1,19 @@
 import { useState } from 'react';
 import Styles from './contactForm.module.scss';
 import emailjs from '@emailjs/browser';
-
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from 'react';
 
 const ContactForm = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [formStatus, setFormStatus] = useState('');
-
+  useEffect(() => {
+    AOS.init({
+    });
+  }, []);
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -34,7 +39,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className={Styles.contact__form}>
+    <div  data-aos="fade-up" data-aos-duration="1500" data-aos-once="true" className={Styles.contact__form}>
       <form onSubmit={handleSubmit}>
         <div className={Styles.form__title}>
           <h2>Let’s work together!</h2>

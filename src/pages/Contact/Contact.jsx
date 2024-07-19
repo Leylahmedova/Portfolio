@@ -1,6 +1,9 @@
 import ContactDetail from "../../components/ContactDetail/ContactDetail";
 import ContactForm from "../../components/ContactForm/ContactForm";
 import Styles from "./contact.module.scss";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from 'react';
 const Contact = () => {
   const contactDetails = [
     {
@@ -19,8 +22,12 @@ const Contact = () => {
       value: "Baku, Azerbaijan",
     },
   ];
+  useEffect(() => {
+    AOS.init({
+    });
+  }, []);
   return (
-    <div className={Styles.contact__page}>
+    <div data-aos="fade-up" data-aos-duration="1500" data-aos-once="true" className={Styles.contact__page}>
       <div className={Styles.contact__form}>
         <ContactForm />
       </div>

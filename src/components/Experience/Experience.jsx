@@ -1,5 +1,8 @@
 import Styles from './experience.module.scss'
 import ExperienceBox from '../ExperienceBox/ExperienceBox'
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from 'react';
 const Experience = () => {
     const experiences=[
         {
@@ -17,9 +20,13 @@ const Experience = () => {
         employement_type:'Intern'
     },
 ]
+useEffect(() => {
+    AOS.init({
+    });
+  }, []);
   return (
     <section className={Styles.experience__section}>
-        <div className={Styles.experience__title}>
+        <div data-aos="fade-up" data-aos-duration="1500" data-aos-once="true" className={Styles.experience__title}>
             <img src="/experience.png" alt="" />
              <h1>My Experience</h1>
         </div>

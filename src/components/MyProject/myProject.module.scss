@@ -1,0 +1,63 @@
+.project{
+    width:calc(calc(100% / 2) - 15px)  ;
+    background-color: #140c1c;
+    box-shadow:#000000 0px 2px 4px 0px, #000 0px 2px 16px 0px;
+    border-radius: 10px;
+    padding: 36px 36px 0 36px ;
+    @media(max-width:760px){
+        width: 100%;
+    }
+    @media(max-width:450px){
+        padding: 20px 20px 0 20px;
+    }
+    .project__background{
+     width: 100%;
+     height: auto;
+     img{
+        width: 100%;
+        height: 100%;
+     }
+    }
+    .project__detail{
+        display: flex;
+        flex-direction: column;
+        padding: 30px 0;
+        h2{
+           font-size: 18px;
+           color: #FFF;
+           font-weight: 300;
+           margin-bottom: 10px;
+        }
+        .project__tools{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 10px;
+            .tool{
+                border-radius: 8px;
+                padding: 10px 16px;
+                color: #fff;
+                background-image: linear-gradient(161deg, #2a1454 0%, #8750f7 100%);
+                span{
+                    font-size: 14px;
+                }
+            }
+        }
+        .btn__groups{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            button{
+                cursor: pointer;
+                border: none;
+                border-radius: 8px;
+                padding: 12px 16px;
+                background-color:#2a1454;
+                a{
+                    color: #fff;
+                    font-size: 14x;
+                }
+            }
+        }
+    }
+} 

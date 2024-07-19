@@ -1,5 +1,8 @@
 import Styles from './education.module.scss'
 import EducationBox from '../EducationBox/EducationBox'
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from 'react';
 const Education = () => {
     const educations=[
         {
@@ -37,9 +40,14 @@ const Education = () => {
     },
   
 ]
+useEffect(() => {
+    AOS.init({
+    });
+  }, []);
+  
   return (
     <section className={Styles.education__section}>
-        <div className={Styles.education__title}>
+        <div data-aos="fade-up" data-aos-duration="1500" data-aos-once="true" className={Styles.education__title}>
             <img src="/education.png" alt="" />
              <h1>My Education</h1>
         </div>

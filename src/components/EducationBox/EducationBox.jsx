@@ -1,7 +1,16 @@
 import Styles from './educationBox.module.scss'
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from 'react';
+
 const EducationBox = ({image,university,date,degree,speciality}) => {
+  useEffect(() => {
+    AOS.init({
+    });
+  }, []);
+  
   return (
-    <div className={Styles.education__box}>
+    <div data-aos="fade-left" data-aos-duration="1500"  data-aos-once="true" className={Styles.education__box}>
       <div className={Styles.education__image}>
         <img src={image} alt={university} />
       </div>

@@ -16,7 +16,7 @@ const Introsection = () => {
           </p>
           <div className={Styles.links__groups}>
             <div className={Styles.download__cv}>
-            <a href="#">Download CV <FiDownload style={{fontSize:'15px'}}/></a>
+            <a target="blank" href="https://drive.google.com/file/d/11CwKKcppzU7OJuhuRSK7d59eMPVluMoP/view?usp=drive_link">Download CV <FiDownload style={{fontSize:'15px'}}/></a>
             </div>
             <div className={Styles.links}>
                 <div><a href="https://www.facebook.com/leylahmadova1?mibextid=LQQJ4d"><FaFacebookF /></a></div>

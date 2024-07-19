@@ -1,7 +1,9 @@
 import Styles from "./contactDetail.module.scss";
+
 const ContactDetail = ({ logo, name, value }) => {
+
   return (
-    <div className={Styles.contact__detail__div}>
+    <div   className={Styles.contact__detail__div}>
       <div className={Styles.contact__detail__logo}>
         <img src={logo} alt={name} />
       </div>

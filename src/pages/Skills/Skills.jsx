@@ -1,6 +1,9 @@
 
 import Styles from './skills.module.scss'
 import SkillComponent from '../../components/SkillComponent/SkillComponent'
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from 'react';
 const Skills = () => {
      const mySkills=[
       {
@@ -55,12 +58,16 @@ const Skills = () => {
       image:"https://seeklogo.com/images/T/tailwind-css-logo-5AD4175897-seeklogo.com.png"
      }
     ]
+    useEffect(() => {
+      AOS.init({});
+    }, []);
+    
   return (
     <div className={Styles.skills__page}>
-        <div className={Styles.skills_page_title}>
+        <div data-aos="fade-up" data-aos-duration="1500" data-aos-once="true"  className={Styles.skills_page_title}>
    
-   <h1>Skills</h1>
-   <p>Here are some of my skills on which I have been working on for the past 2 years.</p>
+   <h1 >Skills</h1>
+   <p >Here are some of my skills on which I have been working on for the past 2 years.</p>
 
         </div>
         <div className={Styles.all_skills}>
