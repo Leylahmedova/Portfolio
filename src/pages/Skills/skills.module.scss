@@ -1,0 +1,37 @@
+.skills__page{
+    display: flex;
+    flex-direction:column;
+    gap: 50px;
+    padding: 80px 0;
+    @media(max-width:760px){
+        padding: 40px 0;
+        gap: 30px;
+    }
+
+    .skills_page_title{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        h1{
+         font-size: 45px;
+         background-image: linear-gradient(to right, #8750f7  0%, #ffffff 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        @media(max-width:450px)
+        {
+            font-size: 30px;
+        }
+        }
+        p{
+          font-size: 18px;
+          color: #f2f3f495
+        }
+    }
+    .all_skills{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+}

@@ -1,0 +1,45 @@
+.education__box{
+    width: 100%;
+    background-color: #140c1c;
+    border-radius: 20px;
+    padding: 20px 30px;
+    display: flex;
+    gap: 20px;
+    .education__image{
+        width: 60px;
+        height: 60px;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit:contain;
+        }
+    }
+    .about__education{
+        width: calc(100% - 60px);
+        h3{
+            font-size: 20px;
+            margin-bottom: 8px;
+            font-weight: 700;
+            color: #8750f7;
+        
+        }
+        h2{
+           color: #fff;
+           font-size: 23px;
+           margin-bottom: 8px;
+        }
+        h4{
+            font-size: 18px;
+            color: #FFF;
+            font-weight: 300;
+            margin-bottom: 8px;
+         
+        }
+        span{
+            font-size: 16px;
+            font-weight: 200;
+            color: #DDDDDD;  
+            margin-bottom: 8px;
+        }
+    }
+}

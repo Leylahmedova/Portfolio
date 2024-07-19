@@ -1,0 +1,19 @@
+.scroll_top{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    border-radius:50% ;
+    border: 1px solid  #2a1454;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #8750f7;
+    font-size: 18px;
+    opacity: 0;
+}
+.showScroll {
+    opacity: 1;
+  }

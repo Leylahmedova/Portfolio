@@ -1,0 +1,18 @@
+.resume__page{
+    display: flex;
+    gap: 40px;
+    width: 100%;
+    padding: 80px 0;
+    @media(max-width:760px){
+      flex-direction: column;
+      padding: 40px 0;
+    }
+    .resume__left__side{
+      flex-basis: 50%;
+    
+    }
+    .resume__right__side{
+        flex: 1;
+       
+    }
+}

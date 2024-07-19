@@ -1,0 +1,29 @@
+.education__section{
+    .education__title{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+      
+        margin-bottom: 40px;
+        img{
+            width: 60px;
+            height:60px;
+           
+        }
+        h1{
+            background-image: linear-gradient(to right, #8750f7 0%, #fff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 40px;
+            @media(max-width:450px)
+            {
+                font-size: 30px;
+            }
+        }
+    }
+    .educations{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+}
