@@ -11,7 +11,7 @@ const MyProjects = () => {
             name:"Portfolio Website",
             tools:['HTML','SASS/SCSS','React'],
             disabled:"false",
-            liveLink:"https://portfolio-seven-tau-85.vercel.app/",
+            liveLink:"https://portfolio-git-master-leyla-ahmadovas-projects.vercel.app/",
             codeLink:"https://github.com/Leylahmedova/Portfolio"
 
         },
@@ -28,16 +28,36 @@ const MyProjects = () => {
             name:"Telef10.az (e-commerce)",
             tools:['HTML','SASS/SCSS','Next.js'],
             disabled:"true",
-            liveLink:"#",
-            codeLink:"#"
+            liveLink:"https://telef10.az/",
+            codeLink:"#private"
 
-        }, {
+        },
+        {
+            image:"/Linkedln.png",
+            name:"Linkedln Website",
+            tools:['HTML','Tailwind CSS','Javascript'],
+            disabled:"false",
+            liveLink:"https://linkedln-websitecopy-git-master-leyla-ahmadovas-projects.vercel.app/",
+            codeLink:"https://github.com/Leylahmedova/LinkedIn-website"
+
+        },
+        {
+            image:"/Trip.png",
+            name:"Trip Website (E-Commerce)",
+            tools:['React','Redux','CSS','Django','Rest API'],
+            disabled:"true",
+            liveLink:"#soon",
+            codeLink:"https://github.com/Leylahmedova/Django-React-Travel-website"
+
+        },
+
+         {
             image:"/Tiger.png",
             name:"Tiger (e-commerce)",
             tools:['HTML','SASS/SCSS','Next.js','Typescript'],
             disabled:"true",
-            liveLink:"#",
-            codeLink:"#"
+            liveLink:"#soon",
+            codeLink:"#private"
 
         }
     ]

@@ -8,6 +8,9 @@ import Contact from "./pages/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import MyProjects from "./pages/myProjects/MyProjects";
 import Scroll from "./components/Scroll/Scroll";
+import Testimonials from "./pages/Testimonials/Testimonials";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 function App() {
   const [isLoading, setIsLoading] = useState(true);
 
@@ -16,6 +19,7 @@ function App() {
   const resumeRef = useRef(null);
   const projectsRef = useRef(null);
   const contactRef = useRef(null);
+  const testimonialsRef=useRef(null);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -38,6 +42,9 @@ function App() {
       case 'projects':
         projectsRef.current.scrollIntoView({ behavior: "smooth" });
         break;
+      // case 'testimonials':
+      //   testimonialsRef.current.scrollIntoView({ behavior: "smooth" });
+      //   break;
       case 'contact':
         contactRef.current.scrollIntoView({ behavior: "smooth" });
         break;
@@ -76,6 +83,9 @@ function App() {
             <div ref={projectsRef}>
               <MyProjects />
             </div>
+            {/* <div ref={testimonialsRef}>
+              <Testimonials/>
+            </div> */}
             </div>
             <div className={Styles.second__theme}>
               <div className={Styles.container}>
