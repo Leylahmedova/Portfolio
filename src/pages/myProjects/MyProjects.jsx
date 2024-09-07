@@ -7,6 +7,24 @@ import { useEffect } from 'react';
 const MyProjects = () => {
     const allProjects=[
         {
+            image:"/AA-Studio.png",
+            name:"AA-Studio.az",
+            tools:['Tailwind CSS','Next.js','TypeScript'],
+            disabled:"true",
+            liveLink:"https://www.aastudio.az/",
+            codeLink:"#private"
+
+        },
+        {
+            image:"/Telef10az.png",
+            name:"Telef10.az (e-commerce)",
+            tools:['HTML','SASS/SCSS','Next.js'],
+            disabled:"true",
+            liveLink:"https://telef10.az/",
+            codeLink:"#private"
+
+        },
+        {
             image:"/PortfolioWebsite.png",
             name:"Portfolio Website",
             tools:['HTML','SASS/SCSS','React'],
@@ -22,14 +40,6 @@ const MyProjects = () => {
             disabled:"false",
             liveLink:"https://travel-blush-zeta.vercel.app/",
             codeLink:"https://github.com/Leylahmedova/travel"
-
-        }, {
-            image:"/Telef10az.png",
-            name:"Telef10.az (e-commerce)",
-            tools:['HTML','SASS/SCSS','Next.js'],
-            disabled:"true",
-            liveLink:"https://telef10.az/",
-            codeLink:"#private"
 
         },
         {
@@ -54,7 +64,7 @@ const MyProjects = () => {
          {
             image:"/Tiger.png",
             name:"Tiger (e-commerce)",
-            tools:['HTML','SASS/SCSS','Next.js','Typescript'],
+            tools:['HTML','SASS/SCSS','Next.js','TypeScript'],
             disabled:"true",
             liveLink:"#soon",
             codeLink:"#private"
